@@ -1,0 +1,133 @@
+.profile-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content:center;
+    height: 10%;
+    min-height: fit-content;
+    background-image: url('../../../assets/home/bg.jpeg');
+}
+.profile-parent{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.profile-details-name{
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.profile-details-role{
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 24px 0;
+}
+.profile-details-role h1{
+    font-size: 40px;
+    font-family:fantasy;
+}
+.primary-text{
+    color: (--white);
+}
+
+.profile-role-tagline{
+    font-size: 19px;
+    margin: 5px 0 0 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.btn:hover{
+    background-color: rgb(235, 233, 163);
+  color: black;
+}
+.profile-picture{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 380px;
+    width: 380px;
+    margin:0 0px 0 100px;
+}
+.profile-picture-background{
+    height: 92%;
+    width: 92%;
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/home/profile.JPG');
+}
+.profile-picture-background:hover{
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+.cols .cols-icons i{
+    color: white;
+    padding: 8px;
+    padding-right: 0px;
+}
+.cols .cols-icons i:hover{
+    transform: scale(1.5);
+}
+.highlighted-text{
+    color:darkorange;
+}
+
+
+/* For various devices */
+@media only screen and (max-width: 1110px) {
+    .profile-picture {
+      margin: 0 0px 0 80px;
+    }
+    .profile-details-name {
+      font-size: 20px;
+    }
+    .profile-details-role .primary-text {
+      font: 12px;
+    }
+    .profile-options .btn {
+      width: 120px;
+      padding: 11px 0;
+      z-index: 700;
+    }
+  }
+  @media only screen and (max-width: 910px) {
+    .profile-picture {
+      margin: 0 0 0 4px;
+      height: 320px;
+      width: 320px;
+    }
+  }
+  @media only screen and (max-width: 810px) {
+    .profile-picture {
+      margin: 0 !important;
+    }
+    .profile-parent {
+      flex-direction: column-reverse;
+      margin: 40px 0 0 0;
+    }
+    .profile-options {
+      display: flex;
+      justify-content: space-between;
+    }
+    .proflie-details {
+      margin: 25px 0 0;
+    }
+    .profile-options{
+      margin: 0 !important;
+    }
+    .profile-details-name,
+    .profile-details-role {
+      text-align: center;
+    }
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .profile-picture {
+      height: 275px;
+      width: 275px;
+      margin-top: -90px;
+    }
+    .proflie-details {
+      width: 95%;
+    }
+  }
+
